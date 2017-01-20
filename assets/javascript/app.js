@@ -105,14 +105,12 @@ $(document).ready(function() {
             // Var to hold table data for minutes till next train
             var dataNextArrivalMin = $("<td style='text-align: center'>" + tMinutesTillTrain + " Min." + "</td>");
 
-            // Var to hold update button
-            var updateBtn = $("<td style='text-align: center'><button  class='hvr-back-pulse update'>Update</button></td>");
             // Var to hold remove button
             var removeBtn = $("<td style='text-align: center'><button class='hvr-back-pulse remove'>Remove</button></td>");
 
             // Var to hold completed table row
             newTableRow.append(dataTrain).append(dataDestination).append(dataFrequency).append(
-                dataNextArrivalTime).append(dataNextArrivalMin).append(updateBtn).append(removeBtn);
+                dataNextArrivalTime).append(dataNextArrivalMin).append(removeBtn);
 
             // Append new row to table
             $("tbody").append(newTableRow);
@@ -124,10 +122,6 @@ $(document).ready(function() {
                 $(this).parents("tr").remove();
                 // Remove from database
                 trainDataBase.ref().child(currentKey).remove();
-            });
-
-            $(document).on("click", ".update", function(){
-                
             });
         });
     });
