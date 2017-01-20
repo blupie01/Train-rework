@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "HandwritingDraft";
+  src: url("../fonts/handwriting-draft_free-version.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LEDCalculator";
+  src: url("../fonts/LEDCalculator.ttf") format("truetype");
+}
+
+html {
+  background: url("../images/wallhaven-114326.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+$setMargin: 0 auto;
+$setWidth: 960px;
+$text-center: center;
+$headerFont: "HandwritingDraft";
+$tableFont: "LEDCalculator";
+$paddingTop: 5px;
+$mainColor: rgba(86, 216, 71, 0.35);
+$tableColor: rgba(0, 0, 0, 0.4);
+$formColor: rgba(117, 70, 206, 0.75);
+$paddingForm: 20px;
+$text-color: ivory;
+$form-color: rgba(224, 171, 24, 1);
+$form-text-color: rgba(238, 205, 134, 1);
+$form-input: rgba(66, 214, 167, 1);
+
+#header, footer {
+  text-align: $text-center;
+  background-color: $mainColor;
+}
+
+h1, h3 {
+  margin: $setMargin;
+  font-family: $headerFont;
+  padding-top: $paddingTop;
+  color: $text-color;
+}
+
+.container {
+  margin: $setMargin;
+  width: $setWidth;
+}
+
+.row {
+  margin: $setMargin;
+  padding: 0;
+}
+
+#train-schedule {
+  height: 400px;
+  font-family: $tableFont;
+  color: $text-color;
+  background-color: $tableColor;
+}
+
+h6 {
+  margin: $setMargin;
+  padding: 20px 0px;
+  font-family: $headerFont;
+  color: $text-color;
+}
+
+form {
+  padding: $paddingForm;
+  background-color: $formColor;
+  font-family: $tableFont;
+}
+
+input {
+  color: $form-input;
+}
+
+#form-container {
+  margin: $setMargin;
+  width: $setWidth;
+}
+
+.input-field label {
+  color: $form-text-color;
+}
+
+.input-field input[type=text]:focus + label {
+  color: $form-color !important;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid $form-color !important;
+  box-shadow: 0 1px 0 0 $form-color !important;
+}
+
+.input-field input[type=text].valid {
+  border-bottom: 1px solid $form-color !important;
+  box-shadow: 0 1px 0 0 $form-color !important;
+}

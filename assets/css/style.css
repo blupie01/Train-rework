@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "HandwritingDraft";
+  src: url("../fonts/handwriting-draft_free-version.ttf") format("truetype"); }
+@font-face {
+  font-family: "LEDCalculator";
+  src: url("../fonts/LEDCalculator.ttf") format("truetype"); }
+html {
+  background: url("../images/wallhaven-114326.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#header, footer {
+  text-align: center;
+  background-color: rgba(86, 216, 71, 0.35); }
+
+h1, h3 {
+  margin: 0 auto;
+  font-family: "HandwritingDraft";
+  padding-top: 5px;
+  color: ivory; }
+
+.container {
+  margin: 0 auto;
+  width: 960px; }
+
+.row {
+  margin: 0 auto;
+  padding: 0; }
+
+#train-schedule {
+  height: 400px;
+  font-family: "LEDCalculator";
+  color: ivory;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+h6 {
+  margin: 0 auto;
+  padding: 20px 0px;
+  font-family: "HandwritingDraft";
+  color: ivory; }
+
+form {
+  padding: 20px;
+  background-color: rgba(117, 70, 206, 0.75);
+  font-family: "LEDCalculator"; }
+
+input {
+  color: #42d6a7; }
+
+#form-container {
+  margin: 0 auto;
+  width: 960px; }
+
+.input-field label {
+  color: #eecd86; }
+
+.input-field input[type=text]:focus + label {
+  color: #e0ab18 !important; }
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #e0ab18 !important;
+  box-shadow: 0 1px 0 0 #e0ab18 !important; }
+
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #e0ab18 !important;
+  box-shadow: 0 1px 0 0 #e0ab18 !important; }
+
+/*# sourceMappingURL=style.css.map */
