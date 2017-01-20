@@ -13,7 +13,7 @@ html {
 
 #header, footer {
   text-align: center;
-  background-color: rgba(86, 216, 71, 0.35); }
+  background-color: rgba(86, 216, 71, 0.65); }
 
 h1, h3 {
   margin: 0 auto;
@@ -33,7 +33,11 @@ h1, h3 {
   height: 400px;
   font-family: "LEDCalculator";
   color: ivory;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.65);
+  overflow: auto; }
+
+#train-schedule::-webkit-scrollbar {
+  display: none; }
 
 h6 {
   margin: 0 auto;
@@ -66,5 +70,33 @@ input {
 .input-field input[type=text].valid {
   border-bottom: 1px solid #e0ab18 !important;
   box-shadow: 0 1px 0 0 #e0ab18 !important; }
+
+#buttons-container {
+  text-align: right; }
+
+button {
+  border: none;
+  background-color: ivory;
+  color: black; }
+
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(196, 166, 134, 0.75); } }
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(196, 166, 134, 0.75); } }
+.hvr-back-pulse:hover {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: magenta;
+  color: black; }
 
 /*# sourceMappingURL=style.css.map */
